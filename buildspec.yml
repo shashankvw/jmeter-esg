@@ -1,0 +1,87 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing dependencies...
+      - wget https://corretto.aws/downloads/latest/amazon-corretto-11-x64-linux-jdk.tar.gz
+      - tar -xzf amazon-corretto-11-x64-linux-jdk.tar.gz
+      - mv amazon-corretto-11.* amazon-corretto-11
+      - export JAVA_HOME=$(pwd)/amazon-corretto-11
+      - export PATH=$JAVA_HOME/bin:$PATH
+      - java -version
+      - echo Installing JMeter...
+      - wget https://downloads.apache.org//jmeter/binaries/apache-jmeter-5.6.3.tgz
+      - tar -xvzf apache-jmeter-5.6.3.tgz
+      - export PATH=$(pwd)/apache-jmeter-5.6.3/bin:$PATH
+      - jmeter -v
+      - echo Installing Python...
+      - apt-get update
+      - apt-get install -y python3 python3-pip
+      - apt-get update && apt-get install -y jq
+
+  pre_build:
+    commands:
+      - echo Preparing test environment...
+      - mkdir -p test-results
+      - mkdir -p reports
+      - chmod -R 777 test-results
+      - chmod -R 777 reports
+      - echo Configuring JMeter...
+      - echo "jmeter.save.saveservice.bytes = true" >> apache-jmeter-5.6.3/bin/user.properties
+      - echo "# Only available with HttpClient4" >> apache-jmeter-5.6.3/bin/user.properties
+      - echo "#jmeter.save.saveservice.sent_bytes=true" >> apache-jmeter-5.6.3/bin/user.properties
+      - echo "jmeter.save.saveservice.label = true" >> apache-jmeter-5.6.3/bin/user.properties
+      - echo "jmeter.save.saveservice.latency = true" >> apache-jmeter-5.6.3/bin/user.properties
+      - echo "jmeter.save.saveservice.response_code = true" >> apache-jmeter-5.6.3/bin/user.properties
+      - echo "jmeter.save.saveservice.response_message = true" >> apache-jmeter-5.6.3/bin/user.properties
+      - echo "jmeter.save.saveservice.successful = true" >> apache-jmeter-5.6.3/bin/user.properties
+      - echo "jmeter.save.saveservice.thread_counts = true" >> apache-jmeter-5.6.3/bin/user.properties
+      - echo "jmeter.save.saveservice.thread_name = true" >> apache-jmeter-5.6.3/bin/user.properties
+      - echo "jmeter.save.saveservice.time = true" >> apache-jmeter-5.6.3/bin/user.properties
+      - echo "jmeter.save.saveservice.connect_time = true" >> apache-jmeter-5.6.3/bin/user.properties
+      - echo "jmeter.save.saveservice.assertion_results_failure_message = true" >> apache-jmeter-5.6.3/bin/user.properties
+      - echo "jmeter.save.saveservice.timestamp_format=yyyy/MM/dd HH:mm:ss" >> apache-jmeter-5.6.3/bin/user.properties
+      - echo Fetching JMeter parameters from AWS Secrets Manager...
+      - |
+        SECRETS=$(aws secretsmanager get-secret-value --secret-id jmeter-secret --query SecretString --output text)
+        export JMeterUserCount=$(echo $SECRETS | jq -r '.JMeterUserCount // empty')
+        export JMeterRampUp=$(echo $SECRETS | jq -r '.JMeterRampUp // empty')
+        echo "JMeterUserCount: $JMeterUserCount"
+        echo "JMeterRampUp: $JMeterRampUp"
+      - echo Fetching OpenSearch credentials from AWS Secrets Manager...
+      - |
+        SECRETS=$(aws secretsmanager get-secret-value --secret-id jmeter-openshearch-secret --query SecretString --output text)
+        export OpenSusername=$(echo $SECRETS | jq -r '.OpenSusername // empty')
+        export OpenSpassword=$(echo $SECRETS | jq -r '.OpenSpassword // empty')
+
+  build:
+    commands:
+      - echo Running JMeter test...
+      - jmeter -n -t test.jmx -JUser=$JMeterUserCount -JRampUp=$JMeterRampUp -l test-results/results.csv
+      - echo Generating JMeter HTML Dashboard Report...
+      - jmeter -g test-results/results.csv -o reports
+
+  post_build:
+    commands:
+      - echo Copying reports to S3...
+      - export DATE=$(date +%Y-%m-%d)
+      - export BASE_PATH="s3://jmeter-reports/reports/${DATE}"
+      - export COUNT=1
+      - while aws s3 ls "${BASE_PATH}/v${COUNT}" > /dev/null 2>&1; do COUNT=$((COUNT+1)); done
+      - export FINAL_PATH="${BASE_PATH}/v${COUNT}"
+      - aws s3 cp reports "${FINAL_PATH}" --recursive
+      - echo Reports copied to ${FINAL_PATH}
+      - echo Converting JMeter results to JSON format...
+      - python3 csv_to_json.py test-results/results.csv test-results/results.json
+      - echo Sending results to OpenSearch...
+      - export INDEX_NAME="jmeter-$(date +%Y-%m-%d)-v${COUNT}"
+      - >
+        curl -u "$OpenSusername:$OpenSpassword" -X POST "OPENSHEARSHURL/${INDEX_NAME}/_bulk" 
+        -H "Content-Type: application/x-ndjson" --data-binary @test-results/results.json
+      - echo Build completed successfully.
+
+artifacts:
+  files:
+    - 'test-results/**/*'
+    - 'reports/**/*'
