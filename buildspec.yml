@@ -42,18 +42,18 @@ phases:
       - echo "jmeter.save.saveservice.connect_time = true" >> apache-jmeter-5.6.3/bin/user.properties
       - echo "jmeter.save.saveservice.assertion_results_failure_message = true" >> apache-jmeter-5.6.3/bin/user.properties
       - echo "jmeter.save.saveservice.timestamp_format=yyyy/MM/dd HH:mm:ss" >> apache-jmeter-5.6.3/bin/user.properties
-      - echo Fetching JMeter parameters from AWS Secrets Manager...
-      - |
-        SECRETS=$(aws secretsmanager get-secret-value --secret-id jmeter-secret --query SecretString --output text)
-        export JMeterUserCount=$(echo $SECRETS | jq -r '.JMeterUserCount // empty')
-        export JMeterRampUp=$(echo $SECRETS | jq -r '.JMeterRampUp // empty')
-        echo "JMeterUserCount: $JMeterUserCount"
-        echo "JMeterRampUp: $JMeterRampUp"
-      - echo Fetching OpenSearch credentials from AWS Secrets Manager...
-      - |
-        SECRETS=$(aws secretsmanager get-secret-value --secret-id jmeter-openshearch-secret --query SecretString --output text)
-        export OpenSusername=$(echo $SECRETS | jq -r '.OpenSusername // empty')
-        export OpenSpassword=$(echo $SECRETS | jq -r '.OpenSpassword // empty')
+#     - echo Fetching JMeter parameters from AWS Secrets Manager...
+#      - |
+#        SECRETS=$(aws secretsmanager get-secret-value --secret-id jmeter-secret --query SecretString --output text)
+#        export JMeterUserCount=$(echo $SECRETS | jq -r '.JMeterUserCount // empty')
+#        export JMeterRampUp=$(echo $SECRETS | jq -r '.JMeterRampUp // empty')
+#        echo "JMeterUserCount: $JMeterUserCount"
+#        echo "JMeterRampUp: $JMeterRampUp"
+#      - echo Fetching OpenSearch credentials from AWS Secrets Manager...
+#      - |
+#        SECRETS=$(aws secretsmanager get-secret-value --secret-id jmeter-openshearch-secret --query SecretString --output text)
+#        export OpenSusername=$(echo $SECRETS | jq -r '.OpenSusername // empty')
+#        export OpenSpassword=$(echo $SECRETS | jq -r '.OpenSpassword // empty')
 
   build:
     commands:
