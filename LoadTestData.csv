@@ -1,142 +1,110 @@
-﻿Datapoint_Code,Org_ID,Standard_Code,Standard_Name,Category_Name,Organization_Name
-E1.3.29.c.i.ii,3280,E1,Climate protection,Environmental,VW Nutzfahrzeuge
-E1.3.29.c.i.i,3280,E1,Climate protection,Environmental,VW Nutzfahrzeuge
-E5.5.39.b,3280,E5,Pollution and Waste Management,Environmental,VW Nutzfahrzeuge
-G1.3.18.b,3280,G1,Corporate Ethics and Integrity,Governance,VW Nutzfahrzeuge
-G1.3.18.a,3280,G1,Corporate Ethics and Integrity,Governance,VW Nutzfahrzeuge
-E5.5.37.a,3280,E5,Pollution and Waste Management,Environmental,VW Nutzfahrzeuge
-E1.3.29.c.i.ii,3260,E1,Climate protection,Environmental,SEAT
-E1.3.29.c.i.i,3260,E1,Climate protection,Environmental,SEAT
-E5.5.39.b,3260,E5,Pollution and Waste Management,Environmental,SEAT
-G1.3.18.b,3260,G1,Corporate Ethics and Integrity,Governance,SEAT
-G1.3.18.a,3260,G1,Corporate Ethics and Integrity,Governance,SEAT
-E5.5.37.a,3260,E5,Pollution and Waste Management,Environmental,SEAT
-E1.3.29.c.i.ii,2800,E1,Climate protection,Environmental,SkodaAuto Deutschlan
-E1.3.29.c.i.i,2800,E1,Climate protection,Environmental,SkodaAuto Deutschlan
-E5.5.39.b,2800,E5,Pollution and Waste Management,Environmental,SkodaAuto Deutschlan
-G1.3.18.b,2800,G1,Corporate Ethics and Integrity,Governance,SkodaAuto Deutschlan
-G1.3.18.a,2800,G1,Corporate Ethics and Integrity,Governance,SkodaAuto Deutschlan
-E5.5.37.a,2800,E5,Pollution and Waste Management,Environmental,SkodaAuto Deutschlan
-E1.3.29.c.i.ii,360,E1,Climate protection,Environmental,Skoda Auto a.s.
-E1.3.29.c.i.i,360,E1,Climate protection,Environmental,Skoda Auto a.s.
-E5.5.39.b,360,E5,Pollution and Waste Management,Environmental,Skoda Auto a.s.
-G1.3.18.b,360,G1,Corporate Ethics and Integrity,Governance,Skoda Auto a.s.
-G1.3.18.a,360,G1,Corporate Ethics and Integrity,Governance,Skoda Auto a.s.
-E5.5.37.a,360,E5,Pollution and Waste Management,Environmental,Skoda Auto a.s.
-E1.3.29.c.i.ii,800,E1,Climate protection,Environmental,SKODA Auto VW India
-E1.3.29.c.i.i,800,E1,Climate protection,Environmental,SKODA Auto VW India
-E5.5.39.b,800,E5,Pollution and Waste Management,Environmental,SKODA Auto VW India
-G1.3.18.b,800,G1,Corporate Ethics and Integrity,Governance,SKODA Auto VW India
-G1.3.18.a,800,G1,Corporate Ethics and Integrity,Governance,SKODA Auto VW India
-E5.5.37.a,800,E5,Pollution and Waste Management,Environmental,SKODA Auto VW India
-E1.3.29.c.i.ii,2860,E1,Climate protection,Environmental,Skoda SLOVENSKO
-E1.3.29.c.i.i,2860,E1,Climate protection,Environmental,Skoda SLOVENSKO
-E5.5.39.b,2860,E5,Pollution and Waste Management,Environmental,Skoda SLOVENSKO
-G1.3.18.b,2860,G1,Corporate Ethics and Integrity,Governance,Skoda SLOVENSKO
-G1.3.18.a,2860,G1,Corporate Ethics and Integrity,Governance,Skoda SLOVENSKO
-E5.5.37.a,2860,E5,Pollution and Waste Management,Environmental,Skoda SLOVENSKO
-E1.3.29.c.i.ii,3230,E1,Climate protection,Environmental,Skoda
-E1.3.29.c.i.i,3230,E1,Climate protection,Environmental,Skoda
-E5.5.39.b,3230,E5,Pollution and Waste Management,Environmental,Skoda
-G1.3.18.b,3230,G1,Corporate Ethics and Integrity,Governance,Skoda
-G1.3.18.a,3230,G1,Corporate Ethics and Integrity,Governance,Skoda
-E5.5.37.a,3230,E5,Pollution and Waste Management,Environmental,Skoda
-E1.3.29.c.i.ii,3205,E1,Climate protection,Environmental,VW Pkw extern
-E1.3.29.c.i.i,3205,E1,Climate protection,Environmental,VW Pkw extern
-E5.5.39.b,3205,E5,Pollution and Waste Management,Environmental,VW Pkw extern
-G1.3.18.b,3205,G1,Corporate Ethics and Integrity,Governance,VW Pkw extern
-G1.3.18.a,3205,G1,Corporate Ethics and Integrity,Governance,VW Pkw extern
-E5.5.37.a,3205,E5,Pollution and Waste Management,Environmental,VW Pkw extern
-E5.5.37.a,3316,E5,Pollution and Waste Management,Environmental,Energy/Charging
-E1.3.29.c.i.ii,3316,E1,Climate protection,Environmental,Energy/Charging
-E1.3.29.c.i.i,3316,E1,Climate protection,Environmental,Energy/Charging
-G1.3.18.b,3316,G1,Corporate Ethics and Integrity,Governance,Energy/Charging
-G1.3.18.a,3316,G1,Corporate Ethics and Integrity,Governance,Energy/Charging
-E5.5.39.b,3316,E5,Pollution and Waste Management,Environmental,Energy/Charging
-E5.5.37.a,3311,E5,Pollution and Waste Management,Environmental,Battery
-E1.3.29.c.i.ii,3311,E1,Climate protection,Environmental,Battery
-E1.3.29.c.i.i,3311,E1,Climate protection,Environmental,Battery
-G1.3.18.b,3311,G1,Corporate Ethics and Integrity,Governance,Battery
-G1.3.18.a,3311,G1,Corporate Ethics and Integrity,Governance,Battery
-E5.5.39.b,3311,E5,Pollution and Waste Management,Environmental,Battery
-E5.5.37.a,3240,E5,Pollution and Waste Management,Environmental,VW China
-E1.3.29.c.i.ii,3240,E1,Climate protection,Environmental,VW China
-E1.3.29.c.i.i,3240,E1,Climate protection,Environmental,VW China
-G1.3.18.b,3240,G1,Corporate Ethics and Integrity,Governance,VW China
-E5.5.39.b,3240,E5,Pollution and Waste Management,Environmental,VW China
-G1.3.18.a,3240,G1,Corporate Ethics and Integrity,Governance,VW China
-E5.5.37.a,3365,E5,Pollution and Waste Management,Environmental,Luxury / Sports
-E1.3.29.c.i.ii,3365,E1,Climate protection,Environmental,Luxury / Sports
-E1.3.29.c.i.i,3365,E1,Climate protection,Environmental,Luxury / Sports
-G1.3.18.b,3365,G1,Corporate Ethics and Integrity,Governance,Luxury / Sports
-G1.3.18.a,3365,G1,Corporate Ethics and Integrity,Governance,Luxury / Sports
-E5.5.39.b,3365,E5,Pollution and Waste Management,Environmental,Luxury / Sports
-E5.5.37.a,3320,E5,Pollution and Waste Management,Environmental,Übrige PKW-Gesellschaften
-E1.3.29.c.i.ii,3320,E1,Climate protection,Environmental,Übrige PKW-Gesellschaften
-E1.3.29.c.i.i,3320,E1,Climate protection,Environmental,Übrige PKW-Gesellschaften
-G1.3.18.b,3320,G1,Corporate Ethics and Integrity,Governance,Übrige PKW-Gesellschaften
-G1.3.18.a,3320,G1,Corporate Ethics and Integrity,Governance,Übrige PKW-Gesellschaften
-E5.5.39.b,3320,E5,Pollution and Waste Management,Environmental,Übrige PKW-Gesellschaften
-E5.5.37.a,3350,E5,Pollution and Waste Management,Environmental,Porsche Holding Salzburg Automotive
-E1.3.29.c.i.ii,3350,E1,Climate protection,Environmental,Porsche Holding Salzburg Automotive
-E1.3.29.c.i.i,3350,E1,Climate protection,Environmental,Porsche Holding Salzburg Automotive
-G1.3.18.b,3350,G1,Corporate Ethics and Integrity,Governance,Porsche Holding Salzburg Automotive
-G1.3.18.a,3350,G1,Corporate Ethics and Integrity,Governance,Porsche Holding Salzburg Automotive
-E5.5.39.b,3350,E5,Pollution and Waste Management,Environmental,Porsche Holding Salzburg Automotive
-E5.5.37.a,3275,E5,Pollution and Waste Management,Environmental,Mobility Solutions
-E1.3.29.c.i.ii,3275,E1,Climate protection,Environmental,Mobility Solutions
-E1.3.29.c.i.i,3275,E1,Climate protection,Environmental,Mobility Solutions
-G1.3.18.b,3275,G1,Corporate Ethics and Integrity,Governance,Mobility Solutions
-G1.3.18.a,3275,G1,Corporate Ethics and Integrity,Governance,Mobility Solutions
-E5.5.39.b,3275,E5,Pollution and Waste Management,Environmental,Mobility Solutions
-E5.5.37.a,3200,E5,Pollution and Waste Management,Environmental,Markengruppe Core
-E1.3.29.c.i.ii,3200,E1,Climate protection,Environmental,Markengruppe Core
-E1.3.29.c.i.i,3200,E1,Climate protection,Environmental,Markengruppe Core
-G1.3.18.b,3200,G1,Corporate Ethics and Integrity,Governance,Markengruppe Core
-G1.3.18.a,3200,G1,Corporate Ethics and Integrity,Governance,Markengruppe Core
-E5.5.39.b,3200,E5,Pollution and Waste Management,Environmental,Markengruppe Core
-E5.5.37.a,3997,E5,Pollution and Waste Management,Environmental,CH JV (R300
-E1.3.29.c.i.ii,3997,E1,Climate protection,Environmental,CH JV (R300
-E1.3.29.c.i.i,3997,E1,Climate protection,Environmental,CH JV (R300
-G1.3.18.b,3997,G1,Corporate Ethics and Integrity,Governance,CH JV (R300
-G1.3.18.a,3997,G1,Corporate Ethics and Integrity,Governance,CH JV (R300
-E5.5.39.b,3997,E5,Pollution and Waste Management,Environmental,CH JV (R300
-E5.5.37.a,3160,E5,Pollution and Waste Management,Environmental,Sonstige Gesellschaften
-E1.3.29.c.i.ii,3160,E1,Climate protection,Environmental,Sonstige Gesellschaften
-E1.3.29.c.i.i,3160,E1,Climate protection,Environmental,Sonstige Gesellschaften
-G1.3.18.b,3160,G1,Corporate Ethics and Integrity,Governance,Sonstige Gesellschaften
-G1.3.18.a,3160,G1,Corporate Ethics and Integrity,Governance,Sonstige Gesellschaften
-E5.5.39.b,3160,E5,Pollution and Waste Management,Environmental,Sonstige Gesellschaften
-E5.5.37.a,3150,E5,Pollution and Waste Management,Environmental,Power Engineering
-E1.3.29.c.i.ii,3150,E1,Climate protection,Environmental,Power Engineering
-E1.3.29.c.i.i,3150,E1,Climate protection,Environmental,Power Engineering
-G1.3.18.b,3150,G1,Corporate Ethics and Integrity,Governance,Power Engineering
-G1.3.18.a,3150,G1,Corporate Ethics and Integrity,Governance,Power Engineering
-E5.5.39.b,3150,E5,Pollution and Waste Management,Environmental,Power Engineering
-E5.5.37.a,3025,E5,Pollution and Waste Management,Environmental,Nutzfahrzeuge
-E1.3.29.c.i.ii,3025,E1,Climate protection,Environmental,Nutzfahrzeuge
-E1.3.29.c.i.i,3025,E1,Climate protection,Environmental,Nutzfahrzeuge
-G1.3.18.b,3025,G1,Corporate Ethics and Integrity,Governance,Nutzfahrzeuge
-G1.3.18.a,3025,G1,Corporate Ethics and Integrity,Governance,Nutzfahrzeuge
-E5.5.39.b,3025,E5,Pollution and Waste Management,Environmental,Nutzfahrzeuge
-E5.5.37.a,3020,E5,Pollution and Waste Management,Environmental,Pkw
-E1.3.29.c.i.ii,3020,E1,Climate protection,Environmental,Pkw
-E1.3.29.c.i.i,3020,E1,Climate protection,Environmental,Pkw
-G1.3.18.b,3020,G1,Corporate Ethics and Integrity,Governance,Pkw
-G1.3.18.a,3020,G1,Corporate Ethics and Integrity,Governance,Pkw
-E5.5.39.b,3020,E5,Pollution and Waste Management,Environmental,Pkw
-E5.5.37.a,3030,E5,Pollution and Waste Management,Environmental,Finanzdienstleistung
-E1.3.29.c.i.ii,3030,E1,Climate protection,Environmental,Finanzdienstleistung
-E1.3.29.c.i.i,3030,E1,Climate protection,Environmental,Finanzdienstleistung
-G1.3.18.a,3030,G1,Corporate Ethics and Integrity,Governance,Finanzdienstleistung
-E5.5.39.b,3030,E5,Pollution and Waste Management,Environmental,Finanzdienstleistung
-G1.3.18.b,3030,G1,Corporate Ethics and Integrity,Governance,Finanzdienstleistung
-E5.5.37.a,3010,E5,Pollution and Waste Management,Environmental,KB Automob./Industrg
-E1.3.29.c.i.ii,3010,E1,Climate protection,Environmental,KB Automob./Industrg
-E1.3.29.c.i.i,3010,E1,Climate protection,Environmental,KB Automob./Industrg
-G1.3.18.b,3010,G1,Corporate Ethics and Integrity,Governance,KB Automob./Industrg
-G1.3.18.a,3010,G1,Corporate Ethics and Integrity,Governance,KB Automob./Industrg
-E5.5.39.b,3010,E5,Pollution and Waste Management,Environmental,KB Automob./Industrg
-E5.5.37.a,3000,E5,Pollution and Waste Management,Environmental,VW Konzern
-E1.3.29.c.i.ii,3000,E1,Climate protection,Environmental,VW Konzern
-E1.3.29.c.i.i,3000,E1,Climate protection,Environmental,VW Konzern
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.4.1">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true"/>
+      <stringProp name="TestPlan.serialize_threadgroups">false</stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1687540800000</longProp>
+        <longProp name="ThreadGroup.end_time">1687540800000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request to Google" enabled="true">
+          <stringProp name="HTTPSampler.domain">google.com</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request to Facebook" enabled="true">
+          <stringProp name="HTTPSampler.domain">facebook.com</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request to Twitter" enabled="true">
+          <stringProp name="HTTPSampler.domain">twitter.com</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request with Invalid Domain" enabled="true">
+          <stringProp name="HTTPSampler.domain">invalid-domain</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request with Invalid Path" enabled="true">
+          <stringProp name="HTTPSampler.domain">google.com</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.path">/invalidpath</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <ResultCollector guiclass="SimpleDataWriter" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <stringProp name="filename">test_results.jtl</stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
