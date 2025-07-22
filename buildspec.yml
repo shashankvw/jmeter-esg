@@ -15,9 +15,6 @@ phases:
       - tar -xvzf apache-jmeter-5.6.3.tgz
       - export PATH=$(pwd)/apache-jmeter-5.6.3/bin:$PATH
       - jmeter -v
-      - cd $(pwd)/apache-jmeter-5.6.3
-#     - java -cp lib/ext/jpgc-cmd-plugins-manager-1.5.jar org.jmeterplugins.repository.PluginManagerCMDInstaller
-      - ./bin/jmeter --tool org.jmeterplugins.repository.PluginManagerCMD install jpgc-ultimate-thread-group
       - echo Installing Python...
       - apt-get update
       - apt-get install -y python3 python3-pip
@@ -45,23 +42,23 @@ phases:
       - echo "jmeter.save.saveservice.connect_time = true" >> apache-jmeter-5.6.3/bin/user.properties
       - echo "jmeter.save.saveservice.assertion_results_failure_message = true" >> apache-jmeter-5.6.3/bin/user.properties
       - echo "jmeter.save.saveservice.timestamp_format=yyyy/MM/dd HH:mm:ss" >> apache-jmeter-5.6.3/bin/user.properties
-#     - echo Fetching JMeter parameters from AWS Secrets Manager...
-#      - |
-#        SECRETS=$(aws secretsmanager get-secret-value --secret-id jmeter-secret --query SecretString --output text)
-#        export JMeterUserCount=$(echo $SECRETS | jq -r '.JMeterUserCount // empty')
-#        export JMeterRampUp=$(echo $SECRETS | jq -r '.JMeterRampUp // empty')
-#        echo "JMeterUserCount: $JMeterUserCount"
-#        echo "JMeterRampUp: $JMeterRampUp"
-#      - echo Fetching OpenSearch credentials from AWS Secrets Manager...
-#      - |
-#        SECRETS=$(aws secretsmanager get-secret-value --secret-id jmeter-openshearch-secret --query SecretString --output text)
-#        export OpenSusername=$(echo $SECRETS | jq -r '.OpenSusername // empty')
-#        export OpenSpassword=$(echo $SECRETS | jq -r '.OpenSpassword // empty')
+      - echo Fetching JMeter parameters from AWS Secrets Manager...
+      - |
+        SECRETS=$(aws secretsmanager get-secret-value --secret-id jmeter-secret --query SecretString --output text)
+        export JMeterUserCount=$(echo $SECRETS | jq -r '.JMeterUserCount // empty')
+        export JMeterRampUp=$(echo $SECRETS | jq -r '.JMeterRampUp // empty')
+        echo "JMeterUserCount: $JMeterUserCount"
+        echo "JMeterRampUp: $JMeterRampUp"
+      - echo Fetching OpenSearch credentials from AWS Secrets Manager...
+      - |
+        SECRETS=$(aws secretsmanager get-secret-value --secret-id jmeter-openshearch-secret --query SecretString --output text)
+        export OpenSusername=$(echo $SECRETS | jq -r '.OpenSusername // empty')
+        export OpenSpassword=$(echo $SECRETS | jq -r '.OpenSpassword // empty')
 
   build:
     commands:
       - echo Running JMeter test...
-      - jmeter -n -t ESG_LoadTest.jmx -JUser=$JMeterUserCount -JRampUp=$JMeterRampUp -JcsvFile=LoadTestData.csv -l test-results/results.csv
+      - jmeter -n -t ESG_LoadTest.jmx -JUser=$JMeterUserCount -JRampUp=$JMeterRampUp -l test-results/results.csv
       - echo Generating JMeter HTML Dashboard Report...
       - jmeter -g test-results/results.csv -o reports
 
@@ -69,7 +66,7 @@ phases:
     commands:
       - echo Copying reports to S3...
       - export DATE=$(date +%Y-%m-%d)
-      - export BASE_PATH="s3://jmeter-reports-esg-dev/reports/${DATE}"
+      - export BASE_PATH="s3://jmeter-reports/reports/${DATE}"
       - export COUNT=1
       - while aws s3 ls "${BASE_PATH}/v${COUNT}" > /dev/null 2>&1; do COUNT=$((COUNT+1)); done
       - export FINAL_PATH="${BASE_PATH}/v${COUNT}"
