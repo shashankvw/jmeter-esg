@@ -60,8 +60,8 @@ phases:
       - echo Running JMeter test...
       - jmeter -n -t ESG_LoadTest.jmx -JUser=$JMeterUserCount -JRampUp=$JMeterRampUp -l test-results/results.jtl
       - echo Generating JMeter HTML Dashboard Report...
-#     - jmeter -g test-results/results.csv -o reports
-
+      - jmeter -g test-results/results.jtl -o reports
+      - cp test-results/results.jtl reports
   post_build:
     commands:
       - echo Copying reports to S3...
@@ -73,7 +73,7 @@ phases:
       - aws s3 cp reports "${FINAL_PATH}" --recursive
       - echo Reports copied to ${FINAL_PATH}
       - echo Converting JMeter results to JSON format...
-      - python3 csv_to_json.py test-results/results.csv test-results/results.json
+#     - python3 csv_to_json.py test-results/results.csv test-results/results.json
       - echo Sending results to OpenSearch...
       - export INDEX_NAME="jmeter-$(date +%Y-%m-%d)-v${COUNT}"
       - >
