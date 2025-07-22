@@ -66,7 +66,7 @@ phases:
     commands:
       - echo Copying reports to S3...
       - export DATE=$(date +%Y-%m-%d)
-      - export BASE_PATH="s3://jmeter-reports/reports/${DATE}"
+      - export BASE_PATH="s3://jmeter-reports-esg-dev/reports/${DATE}"
       - export COUNT=1
       - while aws s3 ls "${BASE_PATH}/v${COUNT}" > /dev/null 2>&1; do COUNT=$((COUNT+1)); done
       - export FINAL_PATH="${BASE_PATH}/v${COUNT}"
