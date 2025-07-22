@@ -58,7 +58,7 @@ phases:
   build:
     commands:
       - echo Running JMeter test...
-      - jmeter -n -t ESG_LoadTest.jmx -JUser=$JMeterUserCount -JRampUp=$JMeterRampUp -JcsvFile=LoadTestData.csv -l test-results/results.jtl
+      - jmeter -n -t ESG_LoadTest.jmx -JcsvFile=LoadTestData.csv -l test-results/results.jtl
       - echo Generating JMeter HTML Dashboard Report...
       - jmeter -g test-results/results.jtl -o reports
       - cp test-results/results.jtl reports
