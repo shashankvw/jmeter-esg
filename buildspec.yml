@@ -15,8 +15,8 @@ phases:
       - tar -xvzf apache-jmeter-5.6.3.tgz
       - export PATH=$(pwd)/apache-jmeter-5.6.3/bin:$PATH
       - jmeter -v
-      - cd $(pwd)/apache-jmeter-5.6.3
-      - java -cp lib/ext/jpgc-cmd-plugins-manager-1.5.jar org.jmeterplugins.repository.PluginManagerCMDInstaller
+#     - cd $(pwd)/apache-jmeter-5.6.3
+#     - java -cp lib/ext/jpgc-cmd-plugins-manager-1.5.jar org.jmeterplugins.repository.PluginManagerCMDInstaller
       - ./bin/jmeter --tool org.jmeterplugins.repository.PluginManagerCMD install jpgc-ultimate-thread-group
       - echo Installing Python...
       - apt-get update
