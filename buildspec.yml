@@ -10,6 +10,7 @@ phases:
       - export JAVA_HOME=$(pwd)/amazon-corretto-11
       - export PATH=$JAVA_HOME/bin:$PATH
       - java -version
+      - apt-get install -y curl openjdk-11-jre-headless wget unzip
       - echo Installing JMeter...
       - wget https://downloads.apache.org//jmeter/binaries/apache-jmeter-5.6.3.tgz
       - tar -xvzf apache-jmeter-5.6.3.tgz
