@@ -19,7 +19,9 @@ phases:
       - export PATH=$(pwd)/apache-jmeter-5.6.3/bin:$PATH
       - apt-get install -y curl
       - curl -O https://repo1.maven.org/maven2/kg/apc/jmeter-plugins-manager/1.9/jmeter-plugins-manager-1.9.jar
+      - curl -O https://repo1.maven.org/maven2/kg/apc/cmdrunner/2.3.0/cmdrunner-2.3.0.jar
       - mv jmeter-plugins-manager-1.9.jar $JMETER_HOME/lib/ext/
+      - mv cmdrunner-2.3.0.jar $JMETER_HOME/lib/
       - cd $JMETER_HOME/lib/ext
       - java -cp $JMETER_HOME/lib/ext/jmeter-plugins-manager-1.9.jar org.jmeterplugins.repository.PluginManagerCMD install jpgc-utg
       - jmeter -v
