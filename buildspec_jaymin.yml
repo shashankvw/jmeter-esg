@@ -15,8 +15,9 @@ phases:
       - wget https://downloads.apache.org//jmeter/binaries/apache-jmeter-5.6.3.tgz
       - tar -xvzf apache-jmeter-5.6.3.tgz
       - apt-get update
-      - export JMETER_HOME=$(pwd)/apache-jmeter-5.6.3
-      - export PATH=$JMETER_HOME/bin:$PATH
+      - export JMETER_HOME=$PWD/apache-jmeter-5.6.3
+      - export PATH=$(pwd)/apache-jmeter-5.6.3/bin:$PATH
+      - apt-get install -y curl
       - curl -O https://repo1.maven.org/maven2/kg/apc/jmeter-plugins-manager/1.9/jmeter-plugins-manager-1.9.jar
       - curl -O https://repo1.maven.org/maven2/kg/apc/cmdrunner/2.3.0/cmdrunner-2.3.0.jar
       - mv jmeter-plugins-manager-1.9.jar $JMETER_HOME/lib/ext/
