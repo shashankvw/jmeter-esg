@@ -18,6 +18,7 @@ phases:
       - mkdir -p /opt/apache-jmeter-5.6.3/lib/ext
       - cd /opt/apache-jmeter-5.6.3/lib/ext
       - curl -O https://repo1.maven.org/maven2/kg/apc/jmeter-plugins-manager/1.9/jmeter-plugins-manager-1.9.jar
+      - cd $CODEBUILD_SRC_DIR
       - export PATH=$(pwd)/apache-jmeter-5.6.3/bin:$PATH
       - jmeter -v
       - echo Installing Python...
