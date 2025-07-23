@@ -20,6 +20,7 @@ phases:
       - apt-get install -y curl
       - curl -O https://repo1.maven.org/maven2/kg/apc/jmeter-plugins-manager/1.9/jmeter-plugins-manager-1.9.jar
       - mv jmeter-plugins-manager-1.9.jar $JMETER_HOME/lib/ext/
+      - cd $JMETER_HOME/lib/ext
       - java -cp $JMETER_HOME/lib/ext/jmeter-plugins-manager-1.9.jar org.jmeterplugins.repository.PluginManagerCMD install jpgc-utg
       - jmeter -v
       - echo Installing Python...
