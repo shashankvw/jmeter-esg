@@ -25,7 +25,8 @@ phases:
 #      - wget https://jmeter-plugins.org/files/packages/jpgc-cmd-plugins-manager-1.5.jar -P $JMETER_HOME/lib/ext/
 #      - java -cp $JMETER_HOME/lib/ext/jpgc-cmd-plugins-manager-1.5.jar org.jmeterplugins.repository.PluginManagerCMDInstaller
       - $JMETER_HOME/bin/jmeter --tool org.jmeterplugins.repository.PluginManagerCMD install jpgc-utg
-      - java -cp $JMETER_HOME/lib/ext/jmeter-plugins-manager-1.9.jar org.jmeterplugins.repository.PluginManagerCMD install jpgc-utg
+#      - java -cp $JMETER_HOME/lib/ext/jmeter-plugins-manager-1.9.jar org.jmeterplugins.repository.PluginManagerCMD install jpgc-utg
+      - java -cp $JMETER_HOME/lib/ext/jmeter-plugins-manager-1.9.jar install jpgc-utg
       - jmeter -v
       - echo Installing Python...
       - apt-get update
